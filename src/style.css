@@ -1,0 +1,211 @@
+:root {
+    --light-dark-bg: rgba(0, 0, 0, 0.5);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#content {
+    min-height: 100vh;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/vegsallad.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 150px;
+    margin-top: 5px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.2rem;
+}
+
+.nav-menu .nav-tab {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-menu .nav-tab:hover {
+    color: dodgerblue;
+    transition: .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+/* home style */
+.hero {
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.cta-btn {
+    font-size: 1.4rem;
+    padding: 8px 12px;
+    margin-top: 20px;
+}
+
+.opening-hour {
+    margin-top: 10px;
+}
+
+/* menu style */
+.menu-content {
+    text-align: center;
+    margin: 30px auto;
+    padding: 40px 20px;
+    background-color: var(--light-dark-bg);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    place-items: center;
+    gap: 20px;
+}
+
+.menu-case {
+    max-width: 80%;
+    background-color: #dfd9d9;
+    padding: 10px;
+}
+
+.menu-case img {
+    width: 40%;
+    border-radius: 50%;
+    border: 2px solid dodgerblue;
+    padding: 3px;
+}
+
+/* contact style */
+.contact-content {
+    color: #fff;
+    margin: 20px auto;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    background-color: var(--light-dark-bg);
+}
+
+.contact-address {
+    margin: 20px;
+}
+
+.contact-address h2,
+.opening-hour h3 {
+    color: rgb(90, 167, 245);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact-address p,
+.opening-hour li{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 90%;
+    height: 40px;
+    margin: 10px;
+    padding-left: 5px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+}
+
+.form-container textarea {
+    resize: none;
+    height: 200px;
+    padding-top: 5px;
+}
+
+.form-container button[type='submit'] {
+    background-color: rgb(90, 167, 245);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 350px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.form-container button[type='submit']:hover {
+    transform: scale(0.95);
+}
+
+/* footer */
+.footer {
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    place-items: center;
+}
+
+@media (max-width: 768px) {
+    .logo-navbar {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+}
